@@ -70,12 +70,12 @@ if (!images[imagePath])
         </p>
 
         {/* Navigation Buttons */}
-        <div class='flex flex-wrap justify-center gap-3 mt-1'>
+        <!-- <div class='flex flex-wrap justify-center gap-3 mt-1'>
           <a
             href='/blog'
             class='home-nav-btn group relative px-6 py-2.5 text-sm font-medium rounded-full bg-background/60 backdrop-blur-sm border border-foreground/10 text-foreground/80 hover:text-foreground hover:bg-background/80 hover:border-foreground/20 transition-all duration-300 hover:scale-105 hover:shadow-md'
           >
-            <span class='relative z-10'>文章</span>
+            <span class='relative z-10'>Блог</span>
             <div
               class='absolute inset-0 rounded-full bg-gradient-to-r from-purple-500/0 via-purple-400/0 to-purple-500/0 group-hover:from-purple-500/10 group-hover:via-purple-400/10 group-hover:to-purple-500/10 transition-all duration-300 opacity-0 group-hover:opacity-100'
             >
@@ -85,7 +85,17 @@ if (!images[imagePath])
             href='/tags'
             class='home-nav-btn group relative px-6 py-2.5 text-sm font-medium rounded-full bg-background/60 backdrop-blur-sm border border-foreground/10 text-foreground/80 hover:text-foreground hover:bg-background/80 hover:border-foreground/20 transition-all duration-300 hover:scale-105 hover:shadow-md'
           >
-            <span class='relative z-10'>标签</span>
+            <span class='relative z-10'>Теги</span>
+            <div
+              class='absolute inset-0 rounded-full bg-gradient-to-r from-purple-500/0 via-purple-400/0 to-purple-500/0 group-hover:from-purple-500/10 group-hover:via-purple-400/10 group-hover:to-purple-500/10 transition-all duration-300 opacity-0 group-hover:opacity-100'
+            >
+            </div>
+          </a>
+          <a
+            href='/links'
+            class='home-nav-btn group relative px-6 py-2.5 text-sm font-medium rounded-full bg-background/60 backdrop-blur-sm border border-foreground/10 text-foreground/80 hover:text-foreground hover:bg-background/80 hover:border-foreground/20 transition-all duration-300 hover:scale-105 hover:shadow-md'
+          >
+            <span class='relative z-10'>Ссылки</span>
             <div
               class='absolute inset-0 rounded-full bg-gradient-to-r from-purple-500/0 via-purple-400/0 to-purple-500/0 group-hover:from-purple-500/10 group-hover:via-purple-400/10 group-hover:to-purple-500/10 transition-all duration-300 opacity-0 group-hover:opacity-100'
             >
@@ -95,13 +105,13 @@ if (!images[imagePath])
             href='/about'
             class='home-nav-btn group relative px-6 py-2.5 text-sm font-medium rounded-full bg-background/60 backdrop-blur-sm border border-foreground/10 text-foreground/80 hover:text-foreground hover:bg-background/80 hover:border-foreground/20 transition-all duration-300 hover:scale-105 hover:shadow-md'
           >
-            <span class='relative z-10'>关于</span>
+            <span class='relative z-10'>О нас</span>
             <div
               class='absolute inset-0 rounded-full bg-gradient-to-r from-purple-500/0 via-purple-400/0 to-purple-500/0 group-hover:from-purple-500/10 group-hover:via-purple-400/10 group-hover:to-purple-500/10 transition-all duration-300 opacity-0 group-hover:opacity-100'
             >
             </div>
           </a>
-        </div>
+        </div> -->
 
         {/* Social Icons */}
         <div class='flex items-center justify-center gap-x-4 mt-3'>
@@ -109,13 +119,14 @@ if (!images[imagePath])
             href='https://discord.gg/f7nDfy3Mzu'
             target='_blank'
             rel='noopener noreferrer'
-            class='group relative p-2.5 rounded-full bg-muted/50 hover:bg-muted transition-all duration-300 hover:scale-110'
+            class='inline-flex items-center gap-1 group relative p-2.5 rounded-full bg-muted/50 hover:bg-muted transition-all duration-300 hover:scale-110'
             aria-label='Discord'
           >
             <Icon
               name='discord'
               class='size-5 text-muted-foreground group-hover:text-foreground transition-colors duration-300'
             />
+            Discord
           </a>
         </div>
       </div>
@@ -145,12 +156,12 @@ if (!images[imagePath])
 
     {/* Content Section - Scroll to view */}
     <div id='content' class='animate flex w-full flex-col gap-y-10 md:w-4/5 lg:w-5/6 pt-8'>
-      <Section title='About'>
-        <p class='text-muted-foreground'>既有缘相识，祝你心想事成</p>
+      <Section title='Мы'>
+        <p class='text-muted-foreground'>Игровое сообщество по Trikz и Bhop режимам в CS:S v34</p>
         <p class='text-muted-foreground'>
-          Now that you have met by fate, I wish you all the best of luck
+          Здесь вы найдёте блог-посты, гайды и много чего ещё, что поможет вам совершенствовать свой уровень игры
         </p>
-        <Button title='More about me' class='w-fit self-end' href='/about' variant='ahead' />
+        <Button title='Подробнее' class='w-fit self-end' href='/about' variant='ahead' />
       </Section>
       {
         allPostsByDate.length > 0 && (
