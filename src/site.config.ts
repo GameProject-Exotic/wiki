@@ -3,24 +3,24 @@ import type { CardListData, Config, IntegrationUserConfig, ThemeUserConfig } fro
 export const theme: ThemeUserConfig = {
   // [Basic]
   /** Title for your website. Will be used in metadata and as browser tab title. */
-  title: '灵的梦境',
+  title: 'Exotic Trikz & Bhop',
   /** Will be used in index page & copyright declaration */
-  author: 'Ling',
+  author: 'Exotic Trikz & Bhop',
   /** Description metadata for your website. Can be used in page metadata. */
-  description: '愿美梦成真',
+  description: '',
   /** The default favicon for your site which should be a path to an image in the `public/` directory. */
   favicon: '/favicon/favicon.gif',
   /** The default social card image for your site which should be a path to an image in the `public/` directory. */
   socialCard: '/images/social-card.png',
   /** Specify the default language for this site. */
   locale: {
-    lang: 'zh-CN',
-    attrs: 'zh_CN',
+    lang: 'ru-RU',
+    attrs: 'ru_RU',
     // Date locale
-    dateLocale: 'zh-CN',
+    dateLocale: 'ru-RU',
     dateOptions: {
       day: 'numeric',
-      month: 'short',
+      month: 'long',
       year: 'numeric'
     }
   },
@@ -48,13 +48,10 @@ export const theme: ThemeUserConfig = {
   /** Configure the header of your site. */
   header: {
     menu: [
-      { title: '文章', link: '/blog' },
-      { title: '标签', link: '/tags' },
-      { title: '时光机', link: '/archives' },
-      { title: '项目', link: '/projects' },
-      { title: '文档', link: '/docs' },
-      { title: '链接', link: '/links' },
-      { title: '关于', link: '/about' }
+      { title: 'Блог', link: '/blog' },
+      { title: 'Теги', link: '/tags' },
+      { title: 'Ссылки', link: '/links' },
+      { title: 'О нас', link: '/about' }
     ]
   },
 
@@ -64,27 +61,11 @@ export const theme: ThemeUserConfig = {
     year: `© ${new Date().getFullYear()}`,
     // year: `© 2019 - ${new Date().getFullYear()}`,
     links: [
-      // Registration link
-      {
-        title: '萌ICP备20250550号',
-        link: 'https://icp.gov.moe/?keyword=20250550',
-        style: 'text-sm' // Uno/TW CSS class
-      },
-      // Privacy Policy link
-      {
-        title: 'Site Policy',
-        link: '/terms',
-        pos: 2 // position set to 2 will be appended to copyright line
-      }
     ],
     /** Enable displaying a "Astro & Pure theme powered" link in your site's footer. */
-    credits: true,
+    credits: false,
     /** Optional details about the social media accounts for this site. */
     social: [
-      { icon: 'github', label: 'GitHub', href: 'https://github.com/LemonAdorable' },
-      { icon: 'bilibili', label: 'Bilibili', href: 'https://space.bilibili.com/3706959832288012' },
-      { icon: 'steam', label: 'Steam', href: 'https://steamcommunity.com/id/lemonadora/' },
-      { icon: 'rss', label: 'RSS', href: '/rss.xml' }
     ]
   },
 
@@ -100,7 +81,7 @@ export const theme: ThemeUserConfig = {
     blogPageSize: 8,
     /** Share buttons to show */
     // Currently support weibo, x, bluesky
-    share: ['weibo', 'x', 'bluesky']
+    share: []
     /** Enable image captions (default false) */
     // imageCaption: true
   }
