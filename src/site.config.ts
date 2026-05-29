@@ -7,7 +7,7 @@ export const theme: ThemeUserConfig = {
   /** Will be used in index page & copyright declaration */
   author: 'Exotic Trikz & Bhop',
   /** Description metadata for your website. Can be used in page metadata. */
-  description: '',
+  description: 'Проект игровых серверов в CS:S v34',
   /** The default favicon for your site which should be a path to an image in the `public/` directory. */
   favicon: '/favicon/favicon.gif',
   /** The default social card image for your site which should be a path to an image in the `public/` directory. */
@@ -114,7 +114,7 @@ export const integ: IntegrationUserConfig = {
   // Add a random quote to the footer (default on homepage footer)
   // See: https://astro-pure.js.org/docs/integrations/advanced#web-content-render
   // [Quote]
-  // quote: {
+  quote: {
   //   // - Hitokoto
   //   // https://developer.hitokoto.cn/sentence/#%E8%AF%B7%E6%B1%82%E5%9C%B0%E5%9D%80
   //   // server: 'https://v1.hitokoto.cn/?c=i',
@@ -124,9 +124,9 @@ export const integ: IntegrationUserConfig = {
   //   // server: 'http://api.quotable.io/quotes/random?maxLength=60',
   //   // target: `(data) => data[0].content || 'Error'`
   //   // - DummyJSON
-  //   server: 'https://dummyjson.com/quotes/random',
-  //   target: `(data) => (data.quote.length > 80 ? \`\${data.quote.slice(0, 80)}...\` : data.quote || 'Error')`
-  // },
+    server: '',
+    target: `() => null`
+  },
   // [Typography]
   // https://unocss.dev/presets/typography
   typography: {
