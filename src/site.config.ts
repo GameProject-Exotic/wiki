@@ -168,7 +168,7 @@ export const integ: IntegrationUserConfig = {
   },
   // Giscus comment system configuration
   giscus: {
-    enable: true,
+    enable: false,
     repo: 'LemonAdorable/lemonadorable.github.io',
     repoId: 'R_kgDOLJXF6A',
     category: 'Announcements',
