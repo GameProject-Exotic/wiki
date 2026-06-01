@@ -3,7 +3,7 @@ import './styles/search.css'
 ---
 
 <div class='search'>
-  <button class='search-button' aria-label='搜索'>
+  <button class='search-button' aria-label='Поиск'>
     <svg
       role='img'
       xmlns='http://www.w3.org/2000/svg'
@@ -30,25 +30,25 @@ import './styles/search.css'
         class='search-bar'
         name='search'
         type='text'
-        aria-label='搜索'
-        placeholder='搜索文章...'
+        aria-label='Поиск'
+        placeholder='Название статьи для поиска...'
       />
       <div class='search-filters'>
         <div class='filter-group'>
-          <label class='filter-label'>时间范围</label>
+          <label class='filter-label'>Период</label>
           <select class='filter-select' data-filter='date'>
-            <option value='all'>全部时间</option>
-            <option value='year'>今年</option>
-            <option value='6months'>近6个月</option>
-            <option value='3months'>近3个月</option>
-            <option value='month'>近1个月</option>
+            <option value='all'>Всё время</option>
+            <option value='year'>Этот год</option>
+            <option value='6months'>Эти 6 месяцев</option>
+            <option value='3months'>Эти 3 месяца</option>
+            <option value='month'>Этот месяц</option>
           </select>
         </div>
         <div class='filter-group'>
-          <label class='filter-label'>标签</label>
+          <label class='filter-label'>Метка</label>
           <div class='filter-multiselect' data-filter='tags'>
-            <button class='filter-multiselect-button' type='button' aria-label='选择标签'>
-              <span class='filter-multiselect-text'>全部</span>
+            <button class='filter-multiselect-button' type='button' aria-label='Выберите'>
+              <span class='filter-multiselect-text'>Все</span>
               <span class='filter-multiselect-arrow'>▼</span>
             </button>
             <div class='filter-multiselect-dropdown'>
@@ -57,24 +57,24 @@ import './styles/search.css'
           </div>
         </div>
         <div class='filter-group'>
-          <label class='filter-label'>类型</label>
+          <label class='filter-label'>Тип</label>
           <div class='filter-multiselect' data-filter='type'>
-            <button class='filter-multiselect-button' type='button' aria-label='选择类型'>
-              <span class='filter-multiselect-text'>全部</span>
+            <button class='filter-multiselect-button' type='button' aria-label='Выберите'>
+              <span class='filter-multiselect-text'>Все</span>
               <span class='filter-multiselect-arrow'>▼</span>
             </button>
             <div class='filter-multiselect-dropdown'>
               <div class='filter-multiselect-option'>
                 <input type='checkbox' id='type-all' value='all' checked />
-                <label for='type-all'>全部</label>
+                <label for='type-all'>Все</label>
               </div>
               <div class='filter-multiselect-option'>
                 <input type='checkbox' id='type-blog' value='blog' />
-                <label for='type-blog'>文章</label>
+                <label for='type-blog'>Статья</label>
               </div>
               <div class='filter-multiselect-option'>
                 <input type='checkbox' id='type-docs' value='docs' />
-                <label for='type-docs'>文档</label>
+                <label for='type-docs'>Документ</label>
               </div>
             </div>
           </div>

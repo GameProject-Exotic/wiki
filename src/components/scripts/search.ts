@@ -336,7 +336,7 @@ async function setupSearch(searchElement: Element, _currentSlug: string, data: C
     allCheckbox.checked = true
     const allLabel = document.createElement('label')
     allLabel.htmlFor = 'tags-all'
-    allLabel.textContent = '全部'
+    allLabel.textContent = 'Все'
     allOption.appendChild(allCheckbox)
     allOption.appendChild(allLabel)
     tagsDropdown.appendChild(allOption)
@@ -365,7 +365,7 @@ async function setupSearch(searchElement: Element, _currentSlug: string, data: C
           cb.checked = false
         })
         currentFilters.tags = []
-        tagsText.textContent = '全部'
+        tagsText.textContent = 'Все'
       }
       triggerSearch()
     })
@@ -385,11 +385,11 @@ async function setupSearch(searchElement: Element, _currentSlug: string, data: C
         // Update button text
         if (selectedTags.length === 0) {
           allCheckbox.checked = true
-          tagsText.textContent = '全部'
+          tagsText.textContent = 'Все'
         } else if (selectedTags.length === 1) {
           tagsText.textContent = selectedTags[0]
         } else {
-          tagsText.textContent = `已选择 ${selectedTags.length} 项`
+          tagsText.textContent = `Выбрано меток: #${selectedTags.length}`
         }
 
         triggerSearch()
@@ -430,7 +430,7 @@ async function setupSearch(searchElement: Element, _currentSlug: string, data: C
           cb.checked = false
         })
         currentFilters.types = []
-        typeText.textContent = '全部'
+        typeText.textContent = 'Все'
       }
       triggerSearch()
     })
@@ -450,11 +450,11 @@ async function setupSearch(searchElement: Element, _currentSlug: string, data: C
         // Update button text
         if (selectedTypes.length === 0) {
           typeAllCheckbox.checked = true
-          typeText.textContent = '全部'
+          typeText.textContent = 'Все'
         } else if (selectedTypes.length === 1) {
           typeText.textContent = checkbox.nextElementSibling?.textContent || '全部'
         } else {
-          typeText.textContent = `已选择 ${selectedTypes.length} 项`
+          typeText.textContent = `Выбрано типов: #${selectedTypes.length}`
         }
 
         triggerSearch()
@@ -703,8 +703,8 @@ async function setupSearch(searchElement: Element, _currentSlug: string, data: C
     removeAllChildren(results)
     if (finalResults.length === 0) {
       results.innerHTML = `<a class="result-card no-match">
-          <h3>没有找到结果</h3>
-          <p>试试其他搜索词？</p>
+          <h3>Поиск вернул 0 результатов</h3>
+          <p>Может попробуете другой запрос?</p>
       </a>`
     } else {
       results.append(...finalResults.map(resultToHTML))
@@ -846,7 +846,7 @@ async function setupSearch(searchElement: Element, _currentSlug: string, data: C
     const pathParts = slug.replace('docs/', '').split('/')
     const breadcrumb = document.createElement('nav')
     breadcrumb.className = 'preview-breadcrumb'
-    breadcrumb.setAttribute('aria-label', '路径导航')
+    breadcrumb.setAttribute('aria-label', 'Навигация')
 
     // Category mapping
     const categoryMap: Record<string, string> = {
@@ -937,7 +937,7 @@ async function setupSearch(searchElement: Element, _currentSlug: string, data: C
       const marker = document.createElement('div')
       marker.className = 'scrollbar-marker'
       marker.dataset.index = String(index)
-      marker.title = `匹配项 ${index + 1}`
+      marker.title = `Элемент #${index + 1}`
 
       // Calculate position
       const position = calculateMarkerPosition(highlight)
@@ -1223,7 +1223,7 @@ async function setupSearch(searchElement: Element, _currentSlug: string, data: C
       console.error('Error fetching preview:', error)
       previewInner = document.createElement('div')
       previewInner.classList.add('preview-inner')
-      previewInner.textContent = '无法加载预览'
+      previewInner.textContent = 'Не удалось загрузить превью'
       preview.replaceChildren(previewInner)
       currentPreviewSlug = null
     }
@@ -1374,4 +1374,3 @@ if (document.readyState === 'loading') {
 } else {
   initSearch()
 }
-
