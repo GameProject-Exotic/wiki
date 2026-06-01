@@ -30,7 +30,8 @@ export default defineConfig({
   compressHTML: true,
 
   // [Basic]
-  site: 'https://lemonadorable.github.io',
+  site: 'https://gameproject-exotic.github.io',
+  base: '/wiki',
   // Deploy to a sub path
   // https://astro-pure.js.org/docs/setup/deployment#platform-with-base-path
   // base: '/astro-pure/',
