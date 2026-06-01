@@ -35,7 +35,7 @@ export default defineConfig({
   // Deploy to a sub path
   // https://astro-pure.js.org/docs/setup/deployment#platform-with-base-path
   // base: '/astro-pure/',
-  trailingSlash: 'never',
+  trailingSlash: 'ignore',
   // root: './my-project-directory',
   server: { host: true },
   // https://docs.astro.build/en/guides/prefetch/
