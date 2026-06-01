@@ -15,32 +15,32 @@ import kvmIcon from '@/assets/tools/kvm.png'
 import luaIcon from '@/assets/tools/lua.gif'
 
 const headings = [
-  { depth: 2, slug: 'hobbies', text: '爱好' },
-  { depth: 2, slug: 'tools', text: '工具' },
-  { depth: 2, slug: 'social-networks', text: '社交网络' },
-  { depth: 2, slug: 'gossips', text: '闲话' },
-  { depth: 2, slug: 'about-blog', text: '关于博客' }
+  // { depth: 2, slug: 'hobbies', text: '爱好' },
+  // { depth: 2, slug: 'tools', text: '工具' },
+  { depth: 2, slug: 'social-networks', text: 'Социальные сети' },
+  // { depth: 2, slug: 'gossips', text: '闲话' },
+  { depth: 2, slug: 'about-blog', text: 'О блоге' }
 ]
 ---
 
-<PageLayout title='关于' {headings} view comment hideBack hideTitle>
+<PageLayout title='О нас' {headings} view comment hideBack hideTitle>
   {/* Left-aligned hero, consistent with navbar */}
   <div class='mt-6 mb-16 flex flex-col items-start'>
-    <div
+    <!-- <div
       class='inline-block rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary mb-4'
     >
       Here is Ling
-    </div>
+    </div> -->
     <h1 class='text-4xl font-bold tracking-tight text-foreground sm:text-6xl mb-4'>
-      关于我 / About Me
+      Exotic / О нас
     </h1>
-    <p class='text-xl text-muted-foreground font-medium'>既有缘相识，祝你心想事成</p>
+    <p class='text-xl text-muted-foreground font-medium'>Проект игровых серверов в CS:S v34</p>
     <p class='text-base text-muted-foreground/80 mt-1'>
-      Now that you have met by fate, I wish you all the best of luck
+      Теперь, когда мы встретились волею судьбы, мы желаем вам всего наилучшего.
     </p>
   </div>
 
-  {/* Hobbies Section */}
+  <!-- {/* Hobbies Section */}
   <div
     class='flex flex-col overflow-hidden rounded-3xl border bg-background/50 shadow-sm hover:border-primary/50 transition-colors duration-300 mb-10'
   >
@@ -184,9 +184,9 @@ const headings = [
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
-  {/* Tools Section */}
+  <!-- {/* Tools Section */}
   <div
     class='flex flex-col overflow-hidden rounded-3xl border bg-background/50 shadow-sm hover:border-primary/50 transition-colors duration-300 mb-10'
   >
@@ -467,7 +467,7 @@ const headings = [
         ]}
       />
     </div>
-  </div>
+  </div> -->
 
   {/* Social Networks Section */}
   <div
@@ -475,128 +475,128 @@ const headings = [
   >
     <div class='h-1 bg-gradient-to-r from-primary/10 via-primary/40 to-primary/10'></div>
     <div class='p-6 sm:p-8 pt-5 sm:pt-7'>
-      <h2 id='social-networks' class='mt-0 mb-4'>社交网络</h2>
-      <p class='text-muted-foreground mt-0 mb-6'>欢迎通过以下平台联系我：</p>
+      <h2 id='social-networks' class='mt-0 mb-4'>Социальные сети</h2>
+      <p class='text-muted-foreground mt-0 mb-6'>Вы можете найти нас на этих платформах, а также связаться, попросить об изменениях на проекте и о многом чём ещё.</p>
       <Substats
         stats={[
-          {
-            platform: 'GitHub',
-            icon: 'github',
-            color: '#24292e',
-            link: 'https://github.com/LemonAdorable',
-            text: 'followers',
-            api: 'github/LemonAdorable'
-          },
           {
             platform: 'Discord',
             icon: 'discord',
             color: '#5865F2',
-            link: '',
-            text: 'members',
+            link: 'https://discord.gg/f7nDfy3Mzu',
+            text: '',
             api: ''
           },
           {
-            platform: 'Telegram',
-            icon: 'telegram',
-            color: '#2ca5e0',
-            link: '',
-            text: 'subscribers',
+            platform: 'GitHub',
+            icon: 'github',
+            color: '#24292e',
+            link: 'https://github.com/GameProject-Exotic',
+            text: '',
             api: ''
           },
-          {
-            platform: 'Bilibili',
-            icon: 'bilibili',
-            color: '#FB7299',
-            link: 'https://space.bilibili.com/2073317402',
-            text: 'followers',
-            api: 'bilibili/2073317402'
-          },
-          {
-            platform: '酷安',
-            icon: 'coolapk',
-            color: '#11A984',
-            link: '',
-            text: 'followers',
-            api: ''
-          },
-          {
-            platform: 'Steam',
-            icon: 'steam',
-            color: '#171a21',
-            link: 'https://steamcommunity.com/id/lemonadora/',
-            text: 'friends',
-            api: ''
-          },
-          {
-            platform: '知乎',
-            icon: 'zhihu',
-            color: '#0084FF',
-            link: '',
-            text: 'followers',
-            api: ''
-          },
-          {
-            platform: 'X',
-            icon: 'x',
-            color: '#000000',
-            link: '',
-            text: 'followers',
-            api: ''
-          },
-          {
-            platform: 'Firefly',
-            iconUrl: fireflyIcon.src,
-            color: '#FF6B6B',
-            link: '',
-            text: 'followers',
-            api: ''
-          },
-          {
-            platform: 'Farcaster',
-            iconUrl: farcasterIcon.src,
-            color: '#8B5CF6',
-            link: '',
-            text: 'followers',
-            api: ''
-          },
-          {
-            platform: 'Paragraph',
-            iconUrl: paragraphIcon.src,
-            color: '#6366F1',
-            link: '',
-            text: 'followers',
-            api: ''
-          },
-          {
-            platform: 'Lens',
-            iconUrl: lensIcon.src,
-            color: '#ABFE2C',
-            link: '',
-            text: 'followers',
-            api: ''
-          },
-          {
-            platform: 'Bluesky',
-            iconUrl: blueskyIcon.src,
-            color: '#00A8FF',
-            link: '',
-            text: 'followers',
-            api: ''
-          },
-          {
-            platform: 'Facebook',
-            iconUrl: facebookIcon.src,
-            color: '#1877F2',
-            link: '',
-            text: 'followers',
-            api: ''
-          }
+          // {
+          //   platform: 'Telegram',
+          //   icon: 'telegram',
+          //   color: '#2ca5e0',
+          //   link: '',
+          //   text: 'subscribers',
+          //   api: ''
+          // },
+          // {
+          //   platform: 'Bilibili',
+          //   icon: 'bilibili',
+          //   color: '#FB7299',
+          //   link: 'https://space.bilibili.com/2073317402',
+          //   text: 'followers',
+          //   api: 'bilibili/2073317402'
+          // },
+          // {
+          //   platform: '酷安',
+          //   icon: 'coolapk',
+          //   color: '#11A984',
+          //   link: '',
+          //   text: 'followers',
+          //   api: ''
+          // },
+          // {
+          //   platform: 'Steam',
+          //   icon: 'steam',
+          //   color: '#171a21',
+          //   link: 'https://steamcommunity.com/id/lemonadora/',
+          //   text: 'friends',
+          //   api: ''
+          // },
+          // {
+          //   platform: '知乎',
+          //   icon: 'zhihu',
+          //   color: '#0084FF',
+          //   link: '',
+          //   text: 'followers',
+          //   api: ''
+          // },
+          // {
+          //   platform: 'X',
+          //   icon: 'x',
+          //   color: '#000000',
+          //   link: '',
+          //   text: 'followers',
+          //   api: ''
+          // },
+          // {
+          //   platform: 'Firefly',
+          //   iconUrl: fireflyIcon.src,
+          //   color: '#FF6B6B',
+          //   link: '',
+          //   text: 'followers',
+          //   api: ''
+          // },
+          // {
+          //   platform: 'Farcaster',
+          //   iconUrl: farcasterIcon.src,
+          //   color: '#8B5CF6',
+          //   link: '',
+          //   text: 'followers',
+          //   api: ''
+          // },
+          // {
+          //   platform: 'Paragraph',
+          //   iconUrl: paragraphIcon.src,
+          //   color: '#6366F1',
+          //   link: '',
+          //   text: 'followers',
+          //   api: ''
+          // },
+          // {
+          //   platform: 'Lens',
+          //   iconUrl: lensIcon.src,
+          //   color: '#ABFE2C',
+          //   link: '',
+          //   text: 'followers',
+          //   api: ''
+          // },
+          // {
+          //   platform: 'Bluesky',
+          //   iconUrl: blueskyIcon.src,
+          //   color: '#00A8FF',
+          //   link: '',
+          //   text: 'followers',
+          //   api: ''
+          // },
+          // {
+          //   platform: 'Facebook',
+          //   iconUrl: facebookIcon.src,
+          //   color: '#1877F2',
+          //   link: '',
+          //   text: 'followers',
+          //   api: ''
+          // }
         ]}
       />
     </div>
   </div>
 
-  {/* Gossips Section */}
+  <!-- {/* Gossips Section */}
   <div
     class='flex flex-col overflow-hidden rounded-3xl border bg-background/50 shadow-sm hover:border-primary/50 transition-colors duration-300 mb-10'
   >
@@ -607,7 +607,7 @@ const headings = [
         <Collapse title='待补充'> 这里可以写一些个人的想法、感悟或者其他内容。 </Collapse>
       </div>
     </div>
-  </div>
+  </div> -->
 
   {/* About Blog Section */}
   <div
@@ -615,58 +615,50 @@ const headings = [
   >
     <div class='h-1 bg-gradient-to-r from-primary/10 via-primary/40 to-primary/10'></div>
     <div class='p-6 sm:p-8 pt-5 sm:pt-7'>
-      <h2 id='about-blog' class='mt-0 mb-4'>关于博客</h2>
-      <p class='text-muted-foreground mt-0 mb-6'>网站历史：</p>
+      <h2 id='about-blog' class='mt-0 mb-4'>О блоге</h2>
+      <p class='text-muted-foreground mt-0 mb-6'>История Wiki-сайта:</p>
       <Timeline
         events={[
           {
-            date: '2024-12-10',
+            date: '29.05.2026',
             content:
-              '使用 <a href="https://github.com/adityatelange/hugo-PaperMod" target="_blank" class="text-primary hover:underline">Hugo PaperMod</a> 主题魔改建站'
+              'Начало работы над этим Wiki-сайтом'
           },
           {
-            date: '2025-12-29',
+            date: '01.06.2026',
             content:
-              '迁移至魔改的 <a href="https://github.com/cworld1/astro-theme-pure" target="_blank" class="text-primary hover:underline">Astro Theme Pure</a> 主题'
+              'Перевод страниц на русский язык и удаления лишнего с них'
           }
         ]}
       />
       <div class='mt-8 rounded-2xl border border-dashed border-primary/20 bg-primary/5 p-5'>
         <p class='mb-3 text-sm text-foreground/80'>
-          本站的平稳运行与个性化定制，离不开以下优秀项目与开源社区提供的资源和技术支持：
+          Мы зависимы от нескольких отличных решений и проектов, сделанных обычными людьми, и мы бы хотели упомянуть их здесь.
         </p>
         <ul class='list-disc pl-5 space-y-1 text-sm text-muted-foreground'>
           <li>
-            Site hosting: <a
-              href='https://pages.github.com/'
+            Хостинг Wiki-сайта: <a
+              href='https://pages.github.com'
               target='_blank'
               class='text-primary hover:underline'>GitHub Pages</a
             >
           </li>
           <li>
-            Framework & Theme: <a
-              href='https://astro.build/'
+            Система Wiki-сайта: <a
+              href='https://astro.build'
               target='_blank'
               class='text-primary hover:underline'>Astro</a
-            > + <a
-              href='https://github.com/LemonAdorable/astro-theme-iris'
-              target='_blank'
-              class='text-primary hover:underline'>Astro Theme Iris</a
             >
           </li>
           <li>
-            CI/CD: <a
-              href='https://github.com/features/actions'
+            Система серверных плагинов: <a
+              href='https://www.sourcemm.net'
               target='_blank'
-              class='text-primary hover:underline'>GitHub Actions</a
-            >
-          </li>
-          <li>
-            Comment system: <a
-              href='https://giscus.app'
-              target='_blank'
-              class='text-primary hover:underline'>Giscus</a
-            >
+              class='text-primary hover:underline'>Metamod:Source
+            </a> + <a
+              href='https://www.sourcemod.net',
+              target='_blank',
+              class='text-primary hover:underline'>SourceMod</a>
           </li>
         </ul>
       </div>
@@ -678,12 +670,12 @@ const headings = [
     class='text-muted-foreground/60 flex flex-col items-center justify-center gap-2'
   >
     <div class='w-16 h-1 rounded-full bg-border'></div>
-    <span class='text-sm mt-4 tracking-widest uppercase'>To be continued</span>
+    <!-- <span class='text-sm mt-4 tracking-widest uppercase'>To be continued</span> -->
   </div>
 </PageLayout>
 
 <style>
-  /* 
+  /*
    * Force About Page article div to utilize the full width without breaking global properties.
    */
   article {
