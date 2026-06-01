@@ -6,13 +6,13 @@ import { Collapse, Timeline } from 'astro-pure/user'
 import PageLayout from '@/layouts/CommonPage.astro'
 import FriendList from '@/components/links/FriendList.astro'
 
-const headings = [
-  // { depth: 2, slug: 'friend-links', text: '好友链接' },
-  // { depth: 2, slug: 'neighbor-feed', text: '邻站动态' },
-  // { depth: 2, slug: 'project-links', text: '项目链接' },
-  // { depth: 2, slug: 'special-links', text: '特殊链接' },
-  // { depth: 2, slug: 'apply-links', text: '申请友链' }
-]
+// const headings = [
+//   // { depth: 2, slug: 'friend-links', text: '好友链接' },
+//   // { depth: 2, slug: 'neighbor-feed', text: '邻站动态' },
+//   // { depth: 2, slug: 'project-links', text: '项目链接' },
+//   // { depth: 2, slug: 'special-links', text: '特殊链接' },
+//   // { depth: 2, slug: 'apply-links', text: '申请友链' }
+// ]
 
 const { friends } = links
 const linksConf = config.integ.links
@@ -40,7 +40,8 @@ const projectLinks = {
 }
 ---
 
-<PageLayout title='Ссылки' {headings} comment hideBack>
+<!-- <PageLayout title='Ссылки' {headings} comment hideBack> -->
+<PageLayout title='Ссылки' comment hideBack>
   <p>Ссылки на разные стороние ресурсы и страницы.</p>
   <!-- <h2 id='friend-links'>好友链接</h2>
   <FriendList list={friends[0]} />
