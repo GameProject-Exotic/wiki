@@ -24,7 +24,7 @@ const logoImage = logoImageModule ? await logoImageModule() : null
     href='/'
     aria-label='Brand'
   >
-    {
+    <!-- {
       logoImage && (
         <Image
           id='header-avatar'
@@ -36,7 +36,7 @@ const logoImage = logoImageModule ? await logoImageModule() : null
           fetchpriority='high'
         />
       )
-    }
+    } -->
     <span>{config.title}</span>
   </a>
 
