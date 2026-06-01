@@ -9,7 +9,7 @@ export const theme: ThemeUserConfig = {
   /** Description metadata for your website. Can be used in page metadata. */
   description: 'Проект игровых серверов в CS:S v34',
   /** The default favicon for your site which should be a path to an image in the `public/` directory. */
-  favicon: '/favicon/favicon.gif',
+  favicon: '/favicon/favicon.png',
   /** The default social card image for your site which should be a path to an image in the `public/` directory. */
   socialCard: '/images/social-card.png',
   /** Specify the default language for this site. */
@@ -179,22 +179,22 @@ export const integ: IntegrationUserConfig = {
 export const terms: CardListData = {
   title: 'Terms content',
   list: [
-    {
-      title: 'Privacy Policy',
-      link: '/terms/privacy-policy'
-    },
-    {
-      title: 'Terms and Conditions',
-      link: '/terms/terms-and-conditions'
-    },
-    {
-      title: 'Copyright',
-      link: '/terms/copyright'
-    },
-    {
-      title: 'Disclaimer',
-      link: '/terms/disclaimer'
-    }
+    // {
+    //   title: 'Privacy Policy',
+    //   link: '/terms/privacy-policy'
+    // },
+    // {
+    //   title: 'Terms and Conditions',
+    //   link: '/terms/terms-and-conditions'
+    // },
+    // {
+    //   title: 'Copyright',
+    //   link: '/terms/copyright'
+    // },
+    // {
+    //   title: 'Disclaimer',
+    //   link: '/terms/disclaimer'
+    // }
   ]
 }
 

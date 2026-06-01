@@ -29,14 +29,14 @@ export class FriendCircle {
   private options: Required<FriendCircleOptions> = {
     private_api_url: '',
     page_turning_number: 10,
-    error_img: '/favicon/favicon.gif'
+    error_img: '/favicon/favicon.png'
   }
 
   init(options: FriendCircleOptions) {
     this.options = {
       private_api_url: options.private_api_url,
       page_turning_number: options.page_turning_number ?? 10,
-      error_img: options.error_img ?? '/favicon/favicon.gif'
+      error_img: options.error_img ?? '/favicon/favicon.png'
     }
     this.root = document.getElementById('friend-circle-lite-root')
   }
