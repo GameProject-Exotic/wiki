@@ -48,10 +48,10 @@ export const theme: ThemeUserConfig = {
   /** Configure the header of your site. */
   header: {
     menu: [
-      { title: 'Блог', link: 'wiki/blog' },
-      { title: 'Теги', link: 'wiki/tags' },
-      { title: 'Ссылки', link: 'wiki/links' },
-      { title: 'О нас', link: 'wiki/about' }
+      { title: 'Блог', link: '/blog' },
+      { title: 'Теги', link: '/tags' },
+      { title: 'Ссылки', link: '/links' },
+      { title: 'О нас', link: '/about' }
     ]
   },
 
