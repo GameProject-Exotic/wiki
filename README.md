@@ -1,2 +1,2 @@
-# Exotic Trikz & Bhop Wiki
+# Exotic / Trikz & Bhop Wiki
 No-op.
