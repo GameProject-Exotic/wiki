@@ -5,7 +5,7 @@ export const theme: ThemeUserConfig = {
   /** Title for your website. Will be used in metadata and as browser tab title. */
   title: 'Exotic Trikz & Bhop',
   /** Will be used in index page & copyright declaration */
-  author: 'Exotic Trikz & Bhop',
+  author: 'Exotic',
   /** Description metadata for your website. Can be used in page metadata. */
   description: 'Проект игровых серверов в CS:S v34',
   /** The default favicon for your site which should be a path to an image in the `public/` directory. */
