@@ -25,16 +25,27 @@
 
   // Listen for theme change event
   listenThemeChange()
+
+  let activeToasts: any[] = []
+
   // Listen for toast event
   document.addEventListener('toast', (e) => {
     const { message, time } = (e as CustomEvent).detail
+
+    activeToasts.forEach(t => t.remove())
+    activeToasts.length = 0
+
     const toast = document.createElement('div')
     toast.className =
-      'animate fixed bottom-8 z-20 px-4 py-2 bg-muted text-foreground rounded-lg border shadow-lg flex items-center gap-2'
+      'animate fixed bottom-8 z-20 px-4 py-2 bg-muted text-foreground rounded-lg border shadow-lg flex items-center gap-2 ml-4'
     toast.innerHTML = `<svg width='22' height='22' viewBox='0 0 24 24' fill='currentColor'>${Icons.info}</svg> <span>${message}</span>`
     document.body.appendChild(toast)
+
+    activeToasts.push(toast)
+
     setTimeout(() => {
       toast.remove()
+      activeToasts = activeToasts.filter(t => t !== toast)
     }, time || 3000)
   })
 </script>
