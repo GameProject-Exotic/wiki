@@ -110,7 +110,9 @@ const logoImage = logoImageModule ? await logoImageModule() : null
       darkModeBtn.addEventListener('click', () => {
         const newTheme = setTheme(undefined, true)
         darkModeBtn.dataset.theme = newTheme
-        showToast({ message: `Set theme to ${newTheme}` })
+        if (newTheme) {
+          showToast({ message: `Смена темы на ${newTheme.charAt(0).toUpperCase() + newTheme.slice(1)}` })
+        }
       })
 
       // Menu

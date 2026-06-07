@@ -95,7 +95,9 @@ import { Icon } from '../user'
         // document.dispatchEvent(toggleDarkModeEvent)
         const newTheme = setTheme(undefined, true)
         darkModeBtn.dataset.theme = newTheme
-        showToast({ message: `Тема поставлена на ${newTheme}` })
+        if (newTheme) {
+          showToast({ message: `Смена темы на ${newTheme.charAt(0).toUpperCase() + newTheme.slice(1)}` })
+        }
       })
 
       // Menu
