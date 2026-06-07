@@ -50,7 +50,7 @@ export const theme: ThemeUserConfig = {
     menu: [
       { title: 'Блог', link: '/blog' },
       { title: 'Метки', link: '/tags' },
-      { title: 'Ссылки', link: '/links' },
+      // { title: 'Ссылки', link: '/links' },
       { title: 'О нас', link: '/about' }
     ]
   },
