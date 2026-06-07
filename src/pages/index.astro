@@ -178,7 +178,7 @@ if (!images[imagePath])
       </Section>
       {
         allPostsByDate.length > 0 && (
-          <Section title='Posts'>
+          <Section title='Посты'>
             <ul class='flex flex-col gap-y-1.5 sm:gap-y-2'>
               {allPostsByDate.map((p) => (
                 <li class='flex flex-col gap-x-2 sm:flex-row'>
@@ -186,7 +186,7 @@ if (!images[imagePath])
                 </li>
               ))}
             </ul>
-            <Button title='More posts' class='w-fit self-end' href='/blog' variant='ahead' />
+            <Button title='Подробнее' class='w-fit self-end' href='/blog' variant='ahead' />
           </Section>
         )
       }
