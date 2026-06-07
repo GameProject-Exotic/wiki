@@ -12,7 +12,7 @@ const { class: className, id = 'graph-view', currentSlug, ...props } = Astro.pro
 
 <div id={id} class={cn('graph-view-container', className)} data-current-slug={currentSlug} {...props}>
   <div class="graph-view-header flex items-center justify-between mb-0 flex-shrink-0">
-    <h2 class="font-medium">GRAPH VIEW</h2>
+    <h2 class="font-medium">СХЕМА СВЯЗЕЙ</h2>
     <button
       id="graph-toggle"
       class="graph-toggle-btn text-muted-foreground hover:text-foreground transition-colors"
@@ -55,14 +55,14 @@ const { class: className, id = 'graph-view', currentSlug, ...props } = Astro.pro
         console.warn('GraphView container not found')
         return
       }
-      
+
       import('./scripts/graph-view').then(({ initGraphView }) => {
         initGraphView()
       }).catch((err) => {
         console.error('Failed to load graph view:', err)
       })
     }
-    
+
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', loadGraphView)
     } else {
@@ -191,4 +191,3 @@ const { class: className, id = 'graph-view', currentSlug, ...props } = Astro.pro
     height: 100%;
   }
 </style>
-
